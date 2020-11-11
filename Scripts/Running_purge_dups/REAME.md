@@ -1,4 +1,5 @@
 purge_dups was run using the following scripts, pulled together from the Manual Pipeline displayed here: https://github.com/dfguan/purge_dups/blob/master/README.md#--pipeline-guide
+purge_dups and dependecies were installed as suggested on the above github page, and these scripts provide no new content, the afformetioned process
 
 Step 1a:
 Main output: cutoffs to be used in purging
