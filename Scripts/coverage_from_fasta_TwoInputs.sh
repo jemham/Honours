@@ -6,11 +6,12 @@ inputfa=${inputpath##*/}
 input=${inputfa%%.fa}
 
 pacbiopath=$2
+nanopath=$3
 
 #.bam file
 
 #map the two read types
-minimap2 -ax map-ont ${inputpath} ~/data/nanopore/all_wahlenbergia_nanopore_excluding_flowcell-4.fastq.gz > ${input}_nanopore.mapping.sam   
+minimap2 -ax map-ont ${inputpath} ${nanopath} > ${input}_nanopore.mapping.sam   
 minimap2 -ax asm20 ${inputpath} ${pacbiopath} > ${input}_pacbio.mapping.sam  
 #fixed 20200601 but the -ax was wrong for pacbio
 
